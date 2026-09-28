@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>品牌理念 | 毛球日和</title>
+    <title>FAQ | 毛球日和</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <style>
         * {
@@ -12,41 +11,17 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            background: #ffffff !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #5a5a5a;
-            line-height: 1.6;
+            background: #ffffff;
         }
-
-        html {
-            background: #ffffff !important;
-        }
-
-        .brand-image {
+        .faq-image {
             width: 100%;
             height: auto;
             display: block;
         }
     </style>
 </head>
-
-<script src="./js/bootstrap.min.js"></script>
-
-<script>
-    function adjustNavbarPadding() {
-        const navbar = document.querySelector('.navbar');
-        const navbarHeight = navbar.offsetHeight;
-        document.body.style.paddingTop = navbarHeight + 'px';
-    }
-    document.addEventListener('DOMContentLoaded', adjustNavbarPadding);
-    window.addEventListener('resize', adjustNavbarPadding);
-</script>
-
 <body>
-
-    <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
@@ -62,7 +37,7 @@
                         <a class="nav-link" href="./index.html">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./brand.html">品牌理念</a>
+                        <a class="nav-link" href="./brand.html">品牌理念</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./news.html">最新消息</a>
@@ -74,18 +49,14 @@
                         <a class="nav-link" href="./membership.html">加入會員</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./faq.html">FAQ</a>
+                        <a class="nav-link active" aria-current="page" href="./faq.html">FAQ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 品牌理念圖片 -->
-    <img src="./img/理念１.png" alt="品牌理念一" class="brand-image">
-    <img src="./img/理念２.png" alt="品牌理念二" class="brand-image">
-
+    <img src="./img/FAQ%20two.png" alt="常見問題 FAQ" class="faq-image">
     <script src="./js/bootstrap.js"></script>
 </body>
-
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>品牌理念 | 毛球日和</title>
+    <title>加入會員 | 毛球日和</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <style>
         * {
@@ -14,20 +14,32 @@
         }
 
         body {
-            background: #ffffff !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #5a5a5a;
-            line-height: 1.6;
+            background: #ffffff;
         }
 
-        html {
-            background: #ffffff !important;
-        }
-
-        .brand-image {
+        img {
             width: 100%;
             height: auto;
             display: block;
+        }
+
+        .membership-divider-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(8px, 2vw, 24px);
+            margin: 20px auto 0;
+            padding: 0 16px;
+        }
+
+        .membership-divider {
+            width: clamp(64px, 20vw, 260px);
+        }
+
+        .membership-levels {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 12px 16px 24px;
         }
     </style>
 </head>
@@ -50,7 +62,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
-                <img src="./img/LOGO定版.png" alt="毛球日和" style="height: 40px; width: auto;">
+                <img src="./img/LOGO定版.png" alt="毛球日和" style="height: 40px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +74,7 @@
                         <a class="nav-link" href="./index.html">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./brand.html">品牌理念</a>
+                        <a class="nav-link" href="./brand.html">品牌理念</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./news.html">最新消息</a>
@@ -71,19 +83,38 @@
                         <a class="nav-link" href="./products.html">系列商品</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./membership.html">加入會員</a>
+                        <a class="nav-link active" aria-current="page" href="./membership.html">加入會員</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./faq.html">FAQ</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 品牌理念圖片 -->
-    <img src="./img/理念１.png" alt="品牌理念一" class="brand-image">
-    <img src="./img/理念２.png" alt="品牌理念二" class="brand-image">
+    <!-- 會員圖片 -->
+    <img src="./img/官網會員-2.gif" alt="加入會員">
+    <div class="membership-divider-group" aria-hidden="true">
+        <img src="./img/輔助圖形.png" alt="" class="membership-divider">
+        <img src="./img/輔助圖形.png" alt="" class="membership-divider">
+        <img src="./img/輔助圖形.png" alt="" class="membership-divider">
+    </div>
+
+    <section class="membership-levels" aria-label="會員等級">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="./img/毛球村民.jpeg" alt="毛球村民會員等級">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./img/毛球守護者.jpeg" alt="毛球守護者會員等級">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="./img/毛球騎士.jpeg" alt="毛球騎士會員等級">
+            </div>
+        </div>
+    </section>
 
     <script src="./js/bootstrap.js"></script>
 </body>
